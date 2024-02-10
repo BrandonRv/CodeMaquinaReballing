@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "C:\Users\Brandon Rivera\Desktop\Programas para Station Bga\Prueba\labels.tmp" -fI -W+ie -o "C:\Users\Brandon Rivera\Desktop\Programas para Station Bga\Prueba\Prueba.hex" -d "C:\Users\Brandon Rivera\Desktop\Programas para Station Bga\Prueba\Prueba.obj" -e "C:\Users\Brandon Rivera\Desktop\Programas para Station Bga\Prueba\Prueba.eep" -m "C:\Users\Brandon Rivera\Desktop\Programas para Station Bga\Prueba\Prueba.map" "C:\Users\Brandon Rivera\Desktop\Programas para Station Bga\Prueba\Prueba.asm"
