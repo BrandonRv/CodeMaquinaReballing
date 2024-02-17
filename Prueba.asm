@@ -1,6 +1,6 @@
 
 ;CodeVisionAVR C Compiler V2.04.8b Evaluation
-;(C) Copyright 1998-2010 Pavel Haiduc, HP InfoTech s.r.l.
+;(C) Copyright 1998-2010.
 ;http://www.hpinfotech.com
 
 ;Chip type                : ATmega8
@@ -1208,7 +1208,7 @@ __GLOBAL_INI_END:
 ;This program was produced by the
 ;CodeWizardAVR V1.25.5 Professional
 ;Automatic Program Generator
-;© Copyright 1998-2007 Pavel Haiduc, HP InfoTech s.r.l.
+;В© Copyright 1998-2007 Pavel Haiduc, HP InfoTech s.r.l.
 ;http://www.hpinfotech.com
 ;
 ;Project :
@@ -1585,7 +1585,7 @@ _0x11:
 	RET
 ; 0000 00A7 }
 ;
-;void Set_Fan(unsigned char num, unsigned char status)   //Устанавливает статус куллера num - номер куллера, status - вкл/выкл
+;void Set_Fan(unsigned char num, unsigned char status)   //Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ Г±ГІГ ГІГіГ± ГЄГіГ«Г«ГҐГ°Г  num - Г­Г®Г¬ГҐГ° ГЄГіГ«Г«ГҐГ°Г , status - ГўГЄГ«/ГўГ»ГЄГ«
 ; 0000 00AA {
 _Set_Fan:
 ; 0000 00AB switch (num)
@@ -1722,7 +1722,7 @@ _0x22:
 	ADIW R28,2
 	RET
 ;
-;void Set_PWM_Value(unsigned char num, unsigned  int PWM)//Устанавливает величину ШИМ нагревателя num - номер нагревателя, PWM - величина ШИМ
+;void Set_PWM_Value(unsigned char num, unsigned  int PWM)//Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ ГўГҐГ«ГЁГ·ГЁГ­Гі ГГ€ГЊ Г­Г ГЈГ°ГҐГўГ ГІГҐГ«Гї num - Г­Г®Г¬ГҐГ° Г­Г ГЈГ°ГҐГўГ ГІГҐГ«Гї, PWM - ГўГҐГ«ГЁГ·ГЁГ­Г  ГГ€ГЊ
 ; 0000 00DA {
 _Set_PWM_Value:
 ; 0000 00DB switch (num)
@@ -1768,7 +1768,7 @@ _0x3A:
 ; 0000 00EB }
 	RJMP _0x2060001
 ;
-;unsigned char Get_Fan_Status(unsigned char num) // Возвращает статус куллера, num - номер куллера
+;unsigned char Get_Fan_Status(unsigned char num) // Г‚Г®Г§ГўГ°Г Г№Г ГҐГІ Г±ГІГ ГІГіГ± ГЄГіГ«Г«ГҐГ°Г , num - Г­Г®Г¬ГҐГ° ГЄГіГ«Г«ГҐГ°Г 
 ; 0000 00EE {
 _Get_Fan_Status:
 ; 0000 00EF switch (num)
@@ -1799,7 +1799,7 @@ _0x3F:
 ; 0000 00F7 }
 	RJMP _0x2060002
 ;
-;unsigned int Get_PWM(unsigned char num)        // Возвращает величину ШИМ нагревателя, num - номер нагревателя
+;unsigned int Get_PWM(unsigned char num)        // Г‚Г®Г§ГўГ°Г Г№Г ГҐГІ ГўГҐГ«ГЁГ·ГЁГ­Гі ГГ€ГЊ Г­Г ГЈГ°ГҐГўГ ГІГҐГ«Гї, num - Г­Г®Г¬ГҐГ° Г­Г ГЈГ°ГҐГўГ ГІГҐГ«Гї
 ; 0000 00FA {
 _Get_PWM:
 ; 0000 00FB switch (num)
@@ -1824,7 +1824,7 @@ _0x45:
 ; 0000 0101 }
 	RJMP _0x2060002
 ;
-;unsigned char Get_Tmp(unsigned char num)       //Возвращает значение температуры термопары, num - номер термопары
+;unsigned char Get_Tmp(unsigned char num)       //Г‚Г®Г§ГўГ°Г Г№Г ГҐГІ Г§Г­Г Г·ГҐГ­ГЁГҐ ГІГҐГ¬ГЇГҐГ°Г ГІГіГ°Г» ГІГҐГ°Г¬Г®ГЇГ Г°Г», num - Г­Г®Г¬ГҐГ° ГІГҐГ°Г¬Г®ГЇГ Г°Г»
 ; 0000 0104 {
 _Get_Tmp:
 ; 0000 0105 switch (num)
@@ -1900,9 +1900,9 @@ _UART:
 	CPC  R31,R17
 	BREQ PC+2
 	RJMP _0x4F
-; 0000 011D         {                                      //Начало  приема команды
+; 0000 011D         {                                      //ГЌГ Г·Г Г«Г®  ГЇГ°ГЁГҐГ¬Г  ГЄГ®Г¬Г Г­Г¤Г»
 ; 0000 011E 
-; 0000 011F         buff1 = enterchar();                    // Определяем тип команды SET/GET
+; 0000 011F         buff1 = enterchar();                    // ГЋГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ ГІГЁГЇ ГЄГ®Г¬Г Г­Г¤Г» SET/GET
 	RCALL _enterchar
 	MOV  R18,R30
 	CLR  R19
@@ -1914,7 +1914,7 @@ _UART:
 	LDI  R26,HIGH(0x53)
 	CPC  R31,R26
 	BRNE _0x53
-; 0000 0123                  {                             // Определяем устанавливаемый параметр Fan/PWM
+; 0000 0123                  {                             // ГЋГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ ГіГ±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГ¬Г»Г© ГЇГ Г°Г Г¬ГҐГІГ° Fan/PWM
 ; 0000 0124                  buff2 = enterchar();
 	RCALL _enterchar
 	MOV  R20,R30
@@ -1958,7 +1958,7 @@ _0x68:
 ; 0000 012C                  }
 ; 0000 012D 
 ; 0000 012E 
-; 0000 012F                  case 'G':                      // Определяем запрашиваемый параметр Fan/PWM/Tmp
+; 0000 012F                  case 'G':                      // ГЋГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ Г§Г ГЇГ°Г ГёГЁГўГ ГҐГ¬Г»Г© ГЇГ Г°Г Г¬ГҐГІГ° Fan/PWM/Tmp
 _0x53:
 	CPI  R30,LOW(0x47)
 	LDI  R26,HIGH(0x47)
